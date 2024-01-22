@@ -1,0 +1,42 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+	<display-name>Archetype Created Web Application</display-name>
+	<servlet>
+		<servlet-name>adde</servlet-name>
+		<servlet-class>com.servlet.CURD.Add</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>adde</servlet-name>
+		<url-pattern>/example</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>update</servlet-name>
+		<servlet-class>com.servlet.CURD.Update</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>update</servlet-name>
+		<url-pattern>/example2</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>delete</servlet-name>
+		<servlet-class>com.servlet.CURD.Delete</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>delete</servlet-name>
+		<url-pattern>/example3</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>clear</servlet-name>
+		<servlet-class>com.servlet.CURD.Truncate</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>clear</servlet-name>
+		<url-pattern>/clearAll</url-pattern>
+	</servlet-mapping>
+</web-app>
